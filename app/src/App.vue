@@ -1,15 +1,40 @@
 <template>
   <main>
-    <div class="text-3xl font-bold underline">
-      sample
-    </div>
+    <Navbar />
+    <Carousel style="width: 100vw; height: 91vh;" />
   </main>
 </template>
 
 <script setup lang="ts">
+import Navbar from './components/navbar.vue';
+import Carousel from './components/carousel/index.vue';
 
+import { defineComponent, onBeforeUnmount, onMounted, ref, watch } from 'vue';
+
+
+defineComponent
+const windowScroll = ref(0) 
+
+watch(windowScroll, (newValue: number, oldValue: number) => {
+  if (newValue > oldValue) {
+    // next
+  } else if (newValue < oldValue) {
+    // prev
+  }
+});
+
+onMounted(async () => {
+  window.addEventListener("scroll", onDetectScroll)
+})
+
+onBeforeUnmount(async () => {
+  window.removeEventListener("scroll", onDetectScroll)
+})
+
+function onDetectScroll() {
+    windowScroll.value = window?.top?.scrollY
+}
 </script>
-
 
 <style scoped>
 header {
