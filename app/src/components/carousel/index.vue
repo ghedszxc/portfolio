@@ -1,10 +1,13 @@
 <template>
     <swiper
         :effect="'fade'"
-        :pagination="pagination"
         :modules="modules"
-        :mousewheel="true">
-
+        :mousewheel="true"
+        :loop="true">
+        <!-- :pagination="{
+            clickable: true
+        }" -->
+        
         <swiper-slide>
             <!-- <img src="https://swiperjs.com/demos/images/nature-1.jpg" /> -->
              <Slide1 />
@@ -46,11 +49,6 @@ export default {
     data:() => ({
         modules: [Mousewheel, EffectFade, Pagination],
     }),
-    // setup() {
-    //     return {
-    //         modules: [Mousewheel, EffectFade, Pagination],
-    //     };
-    // },
 };
 </script>
 

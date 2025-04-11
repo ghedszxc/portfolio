@@ -23,7 +23,6 @@
                     <div class="hidden sm:ml-6 sm:block">
                     <div class="flex space-x-4">
                         <a href="#" class="border-b-2 border-blue-500 px-3 py-2 text-sm font-medium text-white">Me</a>
-                        <a href="#" class="px-3 py-2 text-sm font-medium text-gray-300 hover:border-blue-500 hover:border-b-2 hover:text-white">Skill Sets</a>
                         <a href="#" class="px-3 py-2 text-sm font-medium text-gray-300 hover:border-blue-500 hover:border-b-2 hover:text-white">Experiences</a>
                         <a href="#" class="px-3 py-2 text-sm font-medium text-gray-300 hover:border-blue-500 hover:border-b-2 hover:text-white">Projects</a>
                     </div>
