@@ -4,10 +4,6 @@
         :modules="modules"
         :mousewheel="true"
         :loop="true">
-        <!-- :pagination="{
-            clickable: true
-        }" -->
-        
         <swiper-slide>
             <!-- <img src="https://swiperjs.com/demos/images/nature-1.jpg" /> -->
              <Slide1 />
