@@ -1,38 +1,45 @@
 <template>
-  <main>
+  <div>
     <Navbar />
-    <Carousel style="width: 100vw; height: 91vh;" />
-  </main>
+    <main style="height: 90vh;">
+      <!-- <Carousel style="width: 100vw; height: 91vh;" /> -->
+      <Me v-if="displayPage == 'Me'" />
+      <Projects v-if="displayPage == 'Projects'" />
+      <Experience v-if="displayPage == 'Experience'" />
+    </main>
+  </div>
 </template>
 
-<script setup lang="ts">
+<script>
 import Navbar from './components/navbar.vue';
-import Carousel from './components/carousel/index.vue';
 
-import { defineComponent, onBeforeUnmount, onMounted, ref, watch } from 'vue';
+import Me from './components/me.vue';
+import Projects from './components/projects.vue';
+import Experience from './components/experience.vue';
 
-
-defineComponent
-const windowScroll = ref(0) 
-
-watch(windowScroll, (newValue: number, oldValue: number) => {
-  if (newValue > oldValue) {
-    // next
-  } else if (newValue < oldValue) {
-    // prev
+export default {
+  components: {
+    Navbar, Me, Projects, Experience
+  },
+  data:() => ({
+    windowScroll: 0
+  }),
+  computed: {
+    displayPage() {
+      return this.$store.state.displayPage
+    }
+  },
+  mounted(){
+    window.addEventListener("scroll", this.onDetectScroll())
+  },
+  unmounted(){
+    window.addEventListener("scroll", this.onDetectScroll())
+  },
+  methods: {
+    onDetectScroll() {
+      this.windowScroll = window?.top?.scrollY
+    }
   }
-});
-
-onMounted(async () => {
-  window.addEventListener("scroll", onDetectScroll)
-})
-
-onBeforeUnmount(async () => {
-  window.removeEventListener("scroll", onDetectScroll)
-})
-
-function onDetectScroll() {
-    windowScroll.value = window?.top?.scrollY
 }
 </script>
 

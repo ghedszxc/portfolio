@@ -61,7 +61,6 @@
 body {
   max-height: 100vh;
   max-width: 100vw;
-  overflow: hidden;
   
   color: var(--color-text);
   background: var(--color-background);
