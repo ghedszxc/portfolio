@@ -1,13 +1,13 @@
 <template>
-    <div class="h-full bg-[#222222] py-2 md:py-5 flex justify-center">
+    <div class="h-full py-2 md:py-5 flex justify-center pageBackground">
         <div class="w-[97%] lg:flex overflow-auto">
             <div class="w-full lg:w-[50%] xl:w-[40%] lg:border-r border-neutral-700 py-5 place-items-center">
                 <img class="rounded-full
                         h-[150px] md:h-[200px] lg:h-[230px]
                         w-[150px] md:w-[200px] lg:w-[230px]"
-                    src="/display_pic.jpg"
                     alt="Display Photo"
                 />
+                    <!-- src="/display_pic.jpg" -->
 
                 <h1 class="text-2xl lg:text-2xl xl:text-3xl pt-3 text-white">Gerard Mendiola</h1>
                 <h2 class="pb-4">Web Developer</h2>
@@ -123,5 +123,10 @@ export default {
 
 .font-bold {
     font-weight: bold !important;
+}
+
+.pageBackground {
+    background: #A7C1A8;
+    background: linear-gradient(0deg, rgba(167, 193, 168, 1) 0%, rgba(209, 216, 190, 1) 50%, rgba(238, 239, 224, 1) 100%);
 }
 </style>

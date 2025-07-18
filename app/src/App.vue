@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navbar />
-    <main style="height: 90vh;">
+    <main style="height: 93vh; width: 100%; bottom: 0; position: absolute;">
       <!-- <Carousel style="width: 100vw; height: 91vh;" /> -->
       <Me v-if="displayPage == 'Me'" />
       <Projects v-if="displayPage == 'Projects'" />
