@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="bg-transparent grid content-center h-[8vh] w-full border border-red-500"
+    class="bg-transparent grid content-center h-[8vh] w-full border-b border-slate-300"
   >
     <div class="mx-auto w-full px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
