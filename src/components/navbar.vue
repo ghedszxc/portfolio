@@ -35,33 +35,17 @@
   </nav>
 </template>
 
-<script>
-export default {
-  data: () => ({
-    buttons: ["Me", "Experience", "Projects"],
-  }),
-  computed: {
-    displayPage() {
-      return this.$store.state.displayPage;
-    },
-  },
-  methods: {
-    downloadPdf() {
-      const pdfPath = "/resume.pdf";
-      const fileName = "Web Developer - Mendiola, Gerard.pdf";
+<script setup lang="ts">
+async function downloadPdf() {
+  const pdfPath = "/resume.pdf";
+  const fileName = "Web Developer - Mendiola, Gerard.pdf";
 
-      const link = document.createElement("a");
-      link.href = pdfPath;
-      link.download = fileName;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    },
-    onUpdateDisplayPage(data) {
-      // window.location.href
-      // console.log(window.location)
-      // this.$store.commit('updateDisplayPage', data)
-    },
-  },
-};
+  const link = document.createElement("a");
+
+  link.href = pdfPath;
+  link.download = fileName;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
 </script>
