@@ -1,8 +1,6 @@
 <template>
   <Navbar />
-  <main
-    class="grid justify-self-center w-full max-w-full lg:max-w-[55rem] font-(family-name: 'Avenir LT Std', Avenir, Helvetica, Arial, sans-serif)"
-  >
+  <main class="grid justify-self-center w-full max-w-full lg:max-w-[55rem]">
     <Me id="Me" />
     <Experience id="Experience" />
     <!-- <Projects id="Projects" /> -->
