@@ -25,13 +25,6 @@
             I am well-experienced & keen in front-end side, while in the
             back-end is more of a jack of all trades
           </p>
-          <button
-            :whileHover="{ scale: 1.1 }"
-            :whilePress="{ scale: 0.95 }"
-            @hoverStart="() => console.log('hover started!')"
-          >
-            asdas
-          </button>
         </div>
       </div>
     </div>

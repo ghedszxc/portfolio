@@ -1,6 +1,6 @@
 <template>
   <nav
-    :class="`${scrolledPast100vh ? 'bg-white' : 'bg-transparent text-white'} grid content-center h-[8vh] w-full fixed top-0 left-0 z-0`"
+    :class="`${props?.scrolledPast100vh ? 'bg-white' : 'bg-transparent text-white'} grid content-center h-[8vh] w-full fixed top-0 left-0 z-0`"
   >
     <div class="mx-auto w-full px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
@@ -10,7 +10,7 @@
           <div class="flex shrink-0 items-center">
             <img
               class="h-[40px] w-auto"
-              :src="`/navicon-${scrolledPast100vh ? 'black' : 'white'}.svg`"
+              :src="`/navicon-${props?.scrolledPast100vh ? 'black' : 'white'}.svg`"
               alt="navicon"
             />
           </div>
@@ -26,7 +26,7 @@
               >
                 <p class="font-semibold text-[0.85rem]">Resume</p>
                 <img
-                  :src="`/download-${scrolledPast100vh ? 'black' : 'white'}.svg`"
+                  :src="`/download-${props?.scrolledPast100vh ? 'black' : 'white'}.svg`"
                   alt="download"
                   class="h-[20px] w-auto ml-2"
                 />
@@ -40,23 +40,9 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
-import { onBeforeUnmount, onMounted } from "vue";
-
-const scrolledPast100vh = ref(false);
-
-onMounted(() => {
-  window?.addEventListener("scroll", handleScroll);
+const props = defineProps({
+  scrolledPast100vh: Boolean,
 });
-
-onBeforeUnmount(() => {
-  window?.removeEventListener("scroll", handleScroll);
-});
-
-async function handleScroll() {
-  const scrollY = window?.scrollY || document?.documentElement?.scrollTop;
-  scrolledPast100vh.value = scrollY > window?.innerHeight;
-}
 
 async function downloadPdf() {
   const pdfPath = "/resume.pdf";
