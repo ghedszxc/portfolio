@@ -1,11 +1,12 @@
 <template>
-  <motion.div
-    :initial="{ opacity: 0, y: 100 }"
-    :whileInView="{ opacity: 1, y: 0 }"
-    :transition="{ duration: 0.8 }"
-  >
+  <div>
     <div class="grid justify-items-center py-2 md:py-12">
-      <div class="md:flex md:items-center gap-8 w-full md:w-auto">
+      <motion.div
+        :initial="{ opacity: 0, x: 100 }"
+        :whileInView="{ opacity: 1, x: 0 }"
+        :transition="{ duration: 0.8 }"
+        class="md:flex md:items-center gap-8 w-full md:w-auto"
+      >
         <img
           class="h-[385px] md:h-[305px] xl:h-[385px] w-full md:w-[305px] xl:w-[385px]"
           alt="Display Photo"
@@ -26,9 +27,9 @@
             back-end is more of a jack of all trades
           </p>
         </div>
-      </div>
+      </motion.div>
     </div>
-  </motion.div>
+  </div>
 </template>
 <script setup lang="ts">
 import { motion } from "motion-v";

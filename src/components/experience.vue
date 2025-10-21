@@ -1,11 +1,11 @@
 <template>
-  <motion.div
-    :initial="{ opacity: 0, y: 100 }"
-    :whileInView="{ opacity: 1, y: 0 }"
-    :transition="{ duration: 0.8 }"
-    class="grid justify-items-center py-2 md:py-12"
-  >
-    <div class="w-full max-w-full lg:max-w-[55rem]">
+  <div class="grid justify-items-center py-2 md:py-12">
+    <motion.div
+      :initial="{ opacity: 0, x: -100 }"
+      :whileInView="{ opacity: 1, x: 0 }"
+      :transition="{ duration: 0.8 }"
+      class="w-full max-w-full lg:max-w-[55rem]"
+    >
       <h2
         class="text-3xl md:text-4xl pt-3 font-bold uppercase tracking-[2px] text-center mb-2"
       >
@@ -14,8 +14,8 @@
       <div class="w-full">
         <apexchart :options="options" height="500" :series="series"></apexchart>
       </div>
-    </div>
-  </motion.div>
+    </motion.div>
+  </div>
 </template>
 <script setup lang="ts">
 import { motion } from "motion-v";
