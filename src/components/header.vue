@@ -11,7 +11,7 @@
       <h1 class="text-5xl md:text-6xl font-bold tracking-[7px] mb-2">
         WELCOME
       </h1>
-      <span>Alam kong inggit ka Darwin, kaya tulog ka na</span>
+      <!-- <span>Alam kong inggit ka Darwin, kaya tulog ka na</span> -->
     </motion.div>
   </div>
 </template>
