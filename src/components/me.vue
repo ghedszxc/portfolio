@@ -13,11 +13,11 @@
           src="/display_pic.jpg"
         />
         <div>
-          <h2 class="text-4xl pt-3 font-bold px-2 md:px-0">Gerard Mendiola</h2>
-          <h2 class="pb-4 px-3 md:px-1 pt-1">Web Developer</h2>
+          <!-- <h2 class="text-4xl pt-3 font-bold px-2 md:px-0">Gerard Mendiola</h2>
+          <h2 class="pb-4 px-3 md:px-1 pt-1">Web Developer</h2> -->
 
-          <p class="px-3 md:px-1 text-[1rem] leading-[20px]">
-            I started my career year 2017. <br />
+          <p class="px-3 text-lg">
+            I started my career, year 2017. <br />
             For start-up I used plain HTML, CSS, Javascript & PHP stack tool to
             develop websites & later on I enhanced my skill set by using some
             frameworks such as Vue JS, Node JS, Laravel and more.
