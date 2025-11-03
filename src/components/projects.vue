@@ -7,13 +7,19 @@
     </h2>
 
     <div class="px-[1rem]">
-      <div v-for="(data, key) in projects" :key="key">
-        <div class="flex place-items-center mt-12">
-          <p
-            class="text-lg md:text-xl w-full border-b border-gray-300 mb-4 pb-2"
-          >
+      <div
+        v-for="(data, key) in projects"
+        :key="key"
+        class="border-b border-gray-300 pb-6"
+      >
+        <div class="mt-4 mb-4 pb-2 text-center">
+          <h3 class="text-lg">
             {{ data?.title }}
-          </p>
+          </h3>
+          <div class="text-[0.875rem] leading-[20px] py-2">
+            <p>{{ data?.subtitle }}</p>
+            <i>{{ data?.body }}</i>
+          </div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           <div
@@ -45,7 +51,10 @@
 <script setup lang="ts">
 const projects = [
   {
-    title: "ReactJS (B2C)",
+    title: "React JS",
+    subtitle:
+      "These projects are B2C landing page, it serves to promote company product.",
+    body: "Stack used are: Next JS, CoreMedia CMS & GraphQL.",
     items: [
       {
         title: "EyeMed",
@@ -80,7 +89,10 @@ const projects = [
     ],
   },
   {
-    title: "VueJS (B2B)",
+    title: "Vue JS",
+    subtitle:
+      "These projects are B2B, customer transactions, rewarding points, refunds and more, are covered by these projects",
+    body: "Stack used are: Vue JS, Drupal, & Java.",
     items: [
       {
         title: "EssilorPro",
