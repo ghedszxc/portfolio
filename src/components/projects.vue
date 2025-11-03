@@ -37,9 +37,13 @@
             </a>
             <button
               v-else="item?.newTab"
-              :class="`w-full h-full justify-items-center truncate text-lg md:text-sm cursor-pointer ${item?.style}`"
+              :class="`w-full h-full justify-items-center truncate text-sm cursor-pointer ${item?.style}`"
             >
-              <img :src="item?.logo" :alt="item?.title" class="h-15 mb-2" />
+              <img
+                :src="item?.logo"
+                :alt="item?.title"
+                class="h-15 mb-2 m-auto"
+              />
               {{ item?.title }}
             </button>
           </div>
@@ -60,14 +64,14 @@ const projects = [
         title: "EyeMed",
         logo: "https://www.eyemed.com/resource/crblob/8458/927a4e9a0378a7ef3adc27957691ec76/eyemed-logo-svg-data.svg",
         url: "https://www.eyemed.com/en-us",
-        style: "h-30 w-auto p-5 hover:bg-slate-200",
+        style: "h-30 w-auto p-5 hover:bg-slate-200 m-auto",
         newTab: true,
       },
       {
         title: "EyeMed International",
         logo: "https://media.eyemedinternational.com/cms/caas/v1/media/2698/data/picture/31d87437130234a8e9df6bad34f8720c.png",
         url: "https://www.eyemedinternational.com/",
-        style: "h-30 w-auto p-5 hover:bg-slate-200",
+        style: "h-30 w-auto p-5 hover:bg-slate-200 m-auto",
         newTab: true,
       },
       {
@@ -75,7 +79,7 @@ const projects = [
         logo: "https://www.essilorluxotticaeyecare.com/images/logo-luxottica-2022-png-data.png",
         url: "https://www.essilorluxotticaeyecare.com/",
         style:
-          "h-auto w-auto px-2 md:px-4 py-4 md:py-6 lg:py-12 hover:bg-slate-200",
+          "h-auto w-auto px-2 md:px-4 py-4 md:py-6 lg:py-12 hover:bg-slate-200 m-auto",
         newTab: true,
       },
       {
@@ -98,21 +102,21 @@ const projects = [
         title: "EssilorPro",
         logo: "https://www.essilorpro.io/portal-cms-asset/2025-07/EL_Black_3.png",
         url: "https://www.essilorpro.io/my/auth/login-new",
-        style: "p-2 lg:p-5 hover:bg-slate-200",
+        style: "p-2 lg:p-5 hover:bg-slate-200 m-auto",
         newTab: false,
       },
       {
         title: "OptiPro",
         logo: "https://www.optipro.io/portal-cms-asset/2024-09/opticliq_logo1_0.png",
         url: "https://www.optipro.io/sg/auth/login",
-        style: "p-2 lg:p-5 hover:bg-slate-200",
+        style: "p-2 lg:p-5 hover:bg-slate-200 m-auto",
         newTab: false,
       },
       {
         title: "Nikon - Professionals Hub",
         logo: "https://professionals.nikonlenswear.com/portal-cms-asset/2024-09/nikon-logo_0_8.png",
         url: "https://www.optipro.io/sg/auth/login",
-        style: "p-2 lg:p-5 hover:bg-slate-200",
+        style: "p-2 lg:p-5 hover:bg-slate-200 m-auto",
         newTab: false,
       },
     ],
