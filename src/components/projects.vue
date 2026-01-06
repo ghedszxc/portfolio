@@ -23,29 +23,23 @@
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           <div
-            v-for="(item, key) in data?.items"
-            :key="key"
+            v-for="(item, index) in data?.items"
+            :key="index"
             class="w-full grid place-self-center cursor-pointer"
           >
             <a
-              v-if="item?.newTab"
               :href="item?.url"
               target="_blank"
-              class="justify-items-center"
-            >
-              <img :src="item?.logo" :alt="item?.title" :class="item?.style" />
-            </a>
-            <button
-              v-else="item?.newTab"
-              :class="`w-full h-full justify-items-center truncate text-sm cursor-pointer ${item?.style}`"
+              :class="`${!key ? 'justify-items-center' : `w-full h-full justify-items-center truncate text-sm cursor-pointer ${item?.style}`}`"
             >
               <img
                 :src="item?.logo"
                 :alt="item?.title"
-                class="h-15 mb-2 m-auto"
+                :class="`${!key ? `${item?.style}` : 'h-15 mb-2 m-auto'}`"
               />
-              {{ item?.title }}
-            </button>
+
+              <p v-if="key">{{ item?.title }}</p>
+            </a>
           </div>
         </div>
       </div>
@@ -57,22 +51,20 @@ const projects = [
   {
     title: "React JS",
     subtitle:
-      "These projects are B2C landing page, it serves to promote company product.",
-    body: "Stack used are: Next JS, CoreMedia CMS & GraphQL.",
+      "Listed projects are B2C landing page, it serves to promote company products.",
+    body: "Stack used are: Next JS, CoreMedia 12 & GraphQL.",
     items: [
       {
         title: "EyeMed",
-        logo: "https://www.eyemed.com/resource/crblob/8458/927a4e9a0378a7ef3adc27957691ec76/eyemed-logo-svg-data.svg",
+        logo: "/public/logo-emus.svg",
         url: "https://www.eyemed.com/en-us",
         style: "h-30 w-auto p-5 hover:bg-slate-200 m-auto",
-        newTab: true,
       },
       {
         title: "EyeMed International",
-        logo: "https://media.eyemedinternational.com/cms/caas/v1/media/2698/data/picture/31d87437130234a8e9df6bad34f8720c.png",
+        logo: "https://media.eyemedinternational.com/cms/caas/v1/media/278994/data/baa9b6b6698381a91f87ebc3d4a3804a/logo.png",
         url: "https://www.eyemedinternational.com/",
         style: "h-30 w-auto p-5 hover:bg-slate-200 m-auto",
-        newTab: true,
       },
       {
         title: "Eye Care",
@@ -80,7 +72,6 @@ const projects = [
         url: "https://www.essilorluxotticaeyecare.com/",
         style:
           "h-auto w-auto px-2 md:px-4 py-4 md:py-6 lg:py-12 hover:bg-slate-200 m-auto",
-        newTab: true,
       },
       {
         title: "One Sight",
@@ -88,7 +79,6 @@ const projects = [
         url: "https://onesight.essilorluxottica.com/",
         style:
           "h-auto w-auto bg-gray-950 bg-opacity-75 px-2 md:px-4 py-4 md:py-6 lg:py-12 hover:bg-slate-700",
-        newTab: true,
       },
     ],
   },
@@ -103,21 +93,18 @@ const projects = [
         logo: "https://www.essilorpro.io/portal-cms-asset/2025-07/EL_Black_3.png",
         url: "https://www.essilorpro.io/my/auth/login-new",
         style: "p-2 lg:p-5 hover:bg-slate-200 m-auto",
-        newTab: false,
       },
       {
         title: "OptiPro",
         logo: "https://www.optipro.io/portal-cms-asset/2024-09/opticliq_logo1_0.png",
         url: "https://www.optipro.io/sg/auth/login",
         style: "p-2 lg:p-5 hover:bg-slate-200 m-auto",
-        newTab: false,
       },
       {
         title: "Nikon - Professionals Hub",
         logo: "https://professionals.nikonlenswear.com/portal-cms-asset/2024-09/nikon-logo_0_8.png",
-        url: "https://www.optipro.io/sg/auth/login",
+        url: "https://professionals.nikonlenswear.com/ca",
         style: "p-2 lg:p-5 hover:bg-slate-200 m-auto",
-        newTab: false,
       },
     ],
   },
