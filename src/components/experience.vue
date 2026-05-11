@@ -54,12 +54,14 @@ const options = ref({
       "GraphQL",
       "PHP",
       "Laravel",
-      "Coremedia",
-      "Headless CMS",
+      "CoreMedia 12",
+      "Storyblok",
+      "Drupal",
       "Node JS",
       "Git",
       "Jenkins",
       "Scrum / Agile",
+      "AI Tools (Claude)",
     ],
   },
 });
@@ -67,7 +69,7 @@ const options = ref({
 const series = ref([
   {
     name: "series-1",
-    data: [95, 80, 80, 85, 75, 85, 75, 80, 80, 65, 95, 90, 95],
+    data: [95, 80, 80, 85, 75, 85, 75, 80, 85, 80, 75, 95, 90, 95, 80],
   },
 ]);
 </script>

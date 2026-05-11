@@ -56,7 +56,7 @@ const projects = [
     items: [
       {
         title: "EyeMed",
-        logo: "/public/logo-emus.svg",
+        logo: "https://media.eyemed.com/cms/caas/v1/media/280036/data/71ec6a6556fb67edcc3c24d84951d2ba/eyemed-logo.svg",
         url: "https://www.eyemed.com/en-us",
         style: "h-30 w-auto p-5 hover:bg-slate-200 m-auto",
       },
@@ -75,10 +75,10 @@ const projects = [
       },
       {
         title: "One Sight",
-        logo: "https://media-onesight.essilorluxottica.com/cms/caas/v1/media/260406/data/0a8b9f928468029e1d3379f70ddf68e2/logo-white.png?w=256&q=100",
+        logo: "https://media-onesight.essilorluxottica.com/cms/caas/v1/media/154424/data/0133be324d5b38e1f540bbcd3fc9fc16/logo.png?w=864&q=100",
         url: "https://onesight.essilorluxottica.com/",
         style:
-          "h-auto w-auto bg-gray-950 bg-opacity-75 px-2 md:px-4 py-4 md:py-6 lg:py-12 hover:bg-slate-700",
+          "h-auto w-auto px-2 md:px-4 py-4 md:py-6 lg:py-12 hover:bg-slate-200 m-auto",
       },
     ],
   },
