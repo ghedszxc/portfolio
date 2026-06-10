@@ -25,6 +25,13 @@ No test runner, linter script, or formatter script is wired up. Prettier and `es
 - **Path alias:** `@/*` resolves to `./src/*` (set in both `vite.config.ts` and `tsconfig.app.json`).
 - **Static assets:** Everything in `public/` is served at the site root (e.g. `/favicon.svg`, `/logo-emus.svg`, `/resume.pdf`). Note that some `<img>` tags in components reference `/public/...` paths — Vite serves these correctly in dev but the leading `/public/` is non-idiomatic; the canonical form is just `/asset.svg`.
 
+## Key patterns
+
+- **Content is hardcoded inline:** All data (skill chart series, project list) is defined as plain JS objects/arrays directly inside `<script setup>` — there is no data layer or external JSON.
+- **motion-v usage:** `<motion.div>` elements use `:initial`, `:whileInView`, and `:transition` props for scroll-triggered animations. Even though `motion-v/resolver` handles component auto-imports, `import { motion } from "motion-v"` must still be explicitly written in `<script setup>` when the template uses `motion.div`.
+- **Component naming vs. rendered label:** `experience.vue` renders the "Skill set" section (a horizontal ApexCharts bar chart), not a traditional work history. `projects.vue` renders two groups — React JS and Vue JS — each as a grid of linked logos.
+- **Navbar resume button:** The download-resume button in `navbar.vue` is currently commented out; `downloadPdf()` and its assets (`/resume.pdf`, `/download-*.svg`) still exist in the codebase.
+
 ## Key dependencies
 
 - `vue@^3.5` with `<script setup lang="ts">` SFCs

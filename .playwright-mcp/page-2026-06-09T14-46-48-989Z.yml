@@ -1,0 +1,204 @@
+- generic [ref=e3]:
+    - navigation [ref=e4]:
+        - generic [ref=e6]:
+            - img "navicon" [ref=e9]
+            - button "Resume download" [ref=e11] [cursor=pointer]:
+                - text: Resume
+                - img "download" [ref=e12]
+    - main [ref=e13]:
+        - generic [ref=e16]:
+            - heading "Gerard Mendiola" [level=1] [ref=e17]
+            - paragraph [ref=e18]: Frontend Developer
+            - paragraph [ref=e20]: Building scalable web products since 2017 — Vue, React, TypeScript
+            - generic [ref=e21]:
+                - link "Resume download" [ref=e22] [cursor=pointer]:
+                    - /url: /resume.pdf
+                    - text: Resume
+                    - img "download" [ref=e23]
+                - link "GitHub" [ref=e24] [cursor=pointer]:
+                    - /url: https://github.com/ghedszxc
+                    - img "GitHub" [ref=e25]
+                - link "LinkedIn" [ref=e26] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/in/mgerard96/
+                    - img "LinkedIn" [ref=e27]
+        - generic [ref=e30]:
+            - img "Gerard Mendiola" [ref=e32]
+            - generic [ref=e33]:
+                - paragraph [ref=e34]: About
+                - heading "A bit about me" [level=2] [ref=e35]
+                - paragraph [ref=e37]: I started my career in 2017, building websites with plain HTML, CSS, JavaScript, and PHP. Over the years I expanded into modern frameworks — Vue, React, Node.js, and Laravel — and picked up strong TypeScript and GraphQL skills along the way.
+                - paragraph [ref=e38]: I'm deeply experienced on the frontend, particularly with Vue 2/3 and React ecosystems, while staying comfortable across the full stack. Currently building international B2C and B2B web products at EssilorLuxottica.
+        - generic [ref=e41]:
+            - paragraph [ref=e42]: Capabilities
+            - heading "Skill Set" [level=2] [ref=e43]
+            - generic [ref=e45]:
+                - paragraph [ref=e46]: Frontend
+                - generic [ref=e47]:
+                    - generic [ref=e48]: Vue 2/3 + Nuxt
+                    - generic [ref=e49]: React + Next
+                    - generic [ref=e50]: TypeScript
+                    - generic [ref=e51]: GraphQL
+            - generic [ref=e52]:
+                - paragraph [ref=e53]: Backend & CMS
+                - generic [ref=e54]:
+                    - generic [ref=e55]: PHP
+                    - generic [ref=e56]: Laravel
+                    - generic [ref=e57]: MySQL
+                    - generic [ref=e58]: Node JS
+                    - generic [ref=e59]: CoreMedia 12
+                    - generic [ref=e60]: Storyblok
+                    - generic [ref=e61]: Drupal
+            - generic [ref=e62]:
+                - paragraph [ref=e63]: Tools & Process
+                - generic [ref=e64]:
+                    - generic [ref=e65]: Git
+                    - generic [ref=e66]: Jenkins
+                    - generic [ref=e67]: Scrum / Agile
+                    - generic [ref=e68]: AI Tools
+        - generic [ref=e71]:
+            - paragraph [ref=e72]: Career
+            - heading "Experience" [level=2] [ref=e73]
+            - generic [ref=e75]:
+                - generic [ref=e79]:
+                    - generic [ref=e80]:
+                        - heading "Frontend Developer" [level=3] [ref=e81]
+                        - generic [ref=e82]: ·
+                        - generic [ref=e83]: EssilorLuxottica
+                    - paragraph [ref=e84]: 2021 – Present
+                    - list [ref=e85]:
+                        - listitem [ref=e86]:
+                            - generic [ref=e87]: ▸
+                            - text: Built and maintained international B2C landing pages (EyeMed, OneSight) using Next.js, CoreMedia 12, and GraphQL.
+                        - listitem [ref=e88]:
+                            - generic [ref=e89]: ▸
+                            - text: Developed B2B portals (EssilorPro, OptiPro, Nikon Professionals Hub) with Vue 3, Drupal, and Java backends.
+                        - listitem [ref=e90]:
+                            - generic [ref=e91]: ▸
+                            - text: Led frontend architecture decisions and mentored junior developers across distributed teams.
+                        - listitem [ref=e92]:
+                            - generic [ref=e93]: ▸
+                            - text: Integrated AI-assisted workflows (Claude) to accelerate feature delivery and code review.
+                - generic [ref=e96]:
+                    - generic [ref=e97]:
+                        - heading "Web Developer" [level=3] [ref=e98]
+                        - generic [ref=e99]: ·
+                        - generic [ref=e100]: Previous Role
+                    - paragraph [ref=e101]: 2019 – 2021
+                    - list [ref=e102]:
+                        - listitem [ref=e103]:
+                            - generic [ref=e104]: ▸
+                            - text: Developed full-stack web applications using Vue.js, Laravel, and MySQL.
+                        - listitem [ref=e105]:
+                            - generic [ref=e106]: ▸
+                            - text: Built RESTful APIs and integrated third-party services for client projects.
+                        - listitem [ref=e107]:
+                            - generic [ref=e108]: ▸
+                            - text: Introduced component-based architecture and code standards to the team.
+                - generic [ref=e111]:
+                    - generic [ref=e112]:
+                        - heading "Junior Web Developer" [level=3] [ref=e113]
+                        - generic [ref=e114]: ·
+                        - generic [ref=e115]: Early Career
+                    - paragraph [ref=e116]: 2017 – 2019
+                    - list [ref=e117]:
+                        - listitem [ref=e118]:
+                            - generic [ref=e119]: ▸
+                            - text: Started career building websites with HTML, CSS, JavaScript, and PHP.
+                        - listitem [ref=e120]:
+                            - generic [ref=e121]: ▸
+                            - text: Delivered responsive front-end implementations from PSD/design specs.
+                        - listitem [ref=e122]:
+                            - generic [ref=e123]: ▸
+                            - text: Expanded into Node.js and Vue.js to modernize client projects.
+        - generic [ref=e126]:
+            - paragraph [ref=e127]: Work
+            - heading "Projects" [level=2] [ref=e128]
+            - generic [ref=e130]:
+                - link "EyeMed EyeMed B2C landing page for a leading US vision benefits provider. Promotes plans, networks, and member tools. Next.js CoreMedia 12 GraphQL React" [ref=e132] [cursor=pointer]:
+                    - /url: https://www.eyemed.com/en-us
+                    - img "EyeMed" [ref=e134]
+                    - heading "EyeMed" [level=3] [ref=e135]
+                    - paragraph [ref=e136]: B2C landing page for a leading US vision benefits provider. Promotes plans, networks, and member tools.
+                    - generic [ref=e137]:
+                        - generic [ref=e138]: Next.js
+                        - generic [ref=e139]: CoreMedia 12
+                        - generic [ref=e140]: GraphQL
+                        - generic [ref=e141]: React
+                - link "EyeMed International EyeMed International International expansion of the EyeMed brand — multilingual B2C landing pages across global markets. Next.js CoreMedia 12 GraphQL React" [ref=e143] [cursor=pointer]:
+                    - /url: https://www.eyemedinternational.com/
+                    - img "EyeMed International" [ref=e145]
+                    - heading "EyeMed International" [level=3] [ref=e146]
+                    - paragraph [ref=e147]: International expansion of the EyeMed brand — multilingual B2C landing pages across global markets.
+                    - generic [ref=e148]:
+                        - generic [ref=e149]: Next.js
+                        - generic [ref=e150]: CoreMedia 12
+                        - generic [ref=e151]: GraphQL
+                        - generic [ref=e152]: React
+                - link "EssilorLuxottica Eye Care EssilorLuxottica Eye Care Corporate B2C site for EssilorLuxottica's eye care division, covering products, retail locations, and services. Next.js CoreMedia 12 GraphQL React" [ref=e154] [cursor=pointer]:
+                    - /url: https://www.essilorluxotticaeyecare.com/
+                    - generic [ref=e156]: EssilorLuxottica Eye Care
+                    - heading "EssilorLuxottica Eye Care" [level=3] [ref=e157]
+                    - paragraph [ref=e158]: Corporate B2C site for EssilorLuxottica's eye care division, covering products, retail locations, and services.
+                    - generic [ref=e159]:
+                        - generic [ref=e160]: Next.js
+                        - generic [ref=e161]: CoreMedia 12
+                        - generic [ref=e162]: GraphQL
+                        - generic [ref=e163]: React
+                - link "OneSight OneSight Non-profit initiative landing page for EssilorLuxottica's global vision care accessibility program. Next.js CoreMedia 12 GraphQL React" [ref=e165] [cursor=pointer]:
+                    - /url: https://onesight.essilorluxottica.com/
+                    - img "OneSight" [ref=e167]
+                    - heading "OneSight" [level=3] [ref=e168]
+                    - paragraph [ref=e169]: Non-profit initiative landing page for EssilorLuxottica's global vision care accessibility program.
+                    - generic [ref=e170]:
+                        - generic [ref=e171]: Next.js
+                        - generic [ref=e172]: CoreMedia 12
+                        - generic [ref=e173]: GraphQL
+                        - generic [ref=e174]: React
+                - link "EssilorPro EssilorPro B2B portal for eye care professionals — manages orders, rewarding points, and product catalogs. Vue 3 Drupal Java REST" [ref=e176] [cursor=pointer]:
+                    - /url: https://www.essilorpro.io/my/auth/login-new
+                    - img "EssilorPro" [ref=e178]
+                    - heading "EssilorPro" [level=3] [ref=e179]
+                    - paragraph [ref=e180]: B2B portal for eye care professionals — manages orders, rewarding points, and product catalogs.
+                    - generic [ref=e181]:
+                        - generic [ref=e182]: Vue 3
+                        - generic [ref=e183]: Drupal
+                        - generic [ref=e184]: Java
+                        - generic [ref=e185]: REST
+                - link "OptiPro OptiPro B2B optician portal for the Asia-Pacific region — transactions, refunds, and inventory management. Vue 3 Drupal Java REST" [ref=e187] [cursor=pointer]:
+                    - /url: https://www.optipro.io/sg/auth/login
+                    - img "OptiPro" [ref=e189]
+                    - heading "OptiPro" [level=3] [ref=e190]
+                    - paragraph [ref=e191]: B2B optician portal for the Asia-Pacific region — transactions, refunds, and inventory management.
+                    - generic [ref=e192]:
+                        - generic [ref=e193]: Vue 3
+                        - generic [ref=e194]: Drupal
+                        - generic [ref=e195]: Java
+                        - generic [ref=e196]: REST
+                - link "Nikon Professionals Hub Nikon Professionals Hub Branded B2B portal for Nikon lens professionals — product resources, support, and order management. Vue 3 Drupal Java REST" [ref=e198] [cursor=pointer]:
+                    - /url: https://professionals.nikonlenswear.com/ca
+                    - img "Nikon Professionals Hub" [ref=e200]
+                    - heading "Nikon Professionals Hub" [level=3] [ref=e201]
+                    - paragraph [ref=e202]: Branded B2B portal for Nikon lens professionals — product resources, support, and order management.
+                    - generic [ref=e203]:
+                        - generic [ref=e204]: Vue 3
+                        - generic [ref=e205]: Drupal
+                        - generic [ref=e206]: Java
+                        - generic [ref=e207]: REST
+        - generic [ref=e210]:
+            - paragraph [ref=e211]: Contact
+            - heading "Get in Touch" [level=2] [ref=e212]
+            - paragraph [ref=e214]: Open to new opportunities
+            - generic [ref=e215]:
+                - link "GitHub GitHub" [ref=e216] [cursor=pointer]:
+                    - /url: https://github.com/ghedszxc
+                    - img "GitHub" [ref=e217]
+                    - generic [ref=e218]: GitHub
+                - link "LinkedIn LinkedIn" [ref=e219] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/in/mgerard96/
+                    - img "LinkedIn" [ref=e220]
+                    - generic [ref=e221]: LinkedIn
+                - link "Email" [ref=e222] [cursor=pointer]:
+                    - /url: mailto:mendiolagerard96@gmail.com
+                    - img [ref=e224]
+                    - generic [ref=e226]: Email
+            - paragraph [ref=e227]: © 2025 Gerard Mendiola

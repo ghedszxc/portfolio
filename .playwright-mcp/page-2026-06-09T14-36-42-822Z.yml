@@ -1,0 +1,113 @@
+- generic [ref=e3]:
+  - navigation [ref=e4]:
+    - img "navicon" [ref=e9]
+  - main [ref=e10]:
+    - generic [ref=e12]:
+      - heading "WELCOME" [level=1] [ref=e13]
+      - text: I'm Gerard Mendiola a web developer
+    - generic [ref=e16]:
+      - img "Display Photo" [ref=e17]
+      - paragraph [ref=e19]:
+        - text: I started my career, year 2017.
+        - text: For start-up I used plain HTML, CSS, Javascript & PHP stack tool to develop websites & later on I enhanced my skill set by using some frameworks such as Vue JS, Node JS, Laravel and more.
+        - text: I am well-experienced & keen in front-end side, while in the back-end is more of a jack of all trades
+    - generic [ref=e21]:
+      - heading "Skill set" [level=2] [ref=e22]
+      - img [ref=e26]:
+        - generic [ref=e28]:
+          - generic [ref=e32]:
+            - generic:
+              - generic:
+                - generic: "95"
+              - generic:
+                - generic: "80"
+              - generic:
+                - generic: "80"
+              - generic:
+                - generic: "85"
+              - generic:
+                - generic: "75"
+              - generic:
+                - generic: "85"
+              - generic:
+                - generic: "75"
+              - generic:
+                - generic: "80"
+              - generic:
+                - generic: "85"
+              - generic:
+                - generic: "80"
+              - generic:
+                - generic: "75"
+              - generic:
+                - generic: "95"
+              - generic:
+                - generic: "90"
+              - generic:
+                - generic: "95"
+              - generic:
+                - generic: "80"
+          - generic [ref=e50]:
+            - generic "Vue 2, 3 & Nuxt JS" [ref=e51]
+            - generic "React & Next JS" [ref=e52]
+            - generic "TypeScript" [ref=e53]
+            - generic "MySQL" [ref=e54]
+            - generic "GraphQL" [ref=e55]
+            - generic "PHP" [ref=e56]
+            - generic "Laravel" [ref=e57]
+            - generic "CoreMedia 12" [ref=e58]
+            - generic "Storyblok" [ref=e59]
+            - generic "Drupal" [ref=e60]
+            - generic "Node JS" [ref=e61]
+            - generic "Git" [ref=e62]
+            - generic "Jenkins" [ref=e63]
+            - generic "Scrum / Agile" [ref=e64]
+            - generic "AI Tools (Claude)" [ref=e65]
+          - generic [ref=e67]:
+            - generic "100" [ref=e68]
+            - generic "80" [ref=e69]
+            - generic "60" [ref=e70]
+            - generic "40" [ref=e71]
+            - generic "20" [ref=e72]
+            - generic "0" [ref=e73]
+    - generic [ref=e74]:
+      - heading "Projects" [level=2] [ref=e75]
+      - generic [ref=e76]:
+        - generic [ref=e77]:
+          - generic [ref=e78]:
+            - heading "React JS" [level=3] [ref=e79]
+            - generic [ref=e80]:
+              - paragraph [ref=e81]: Listed projects are B2C landing page, it serves to promote company products.
+              - text: "Stack used are: Next JS, CoreMedia 12 & GraphQL."
+          - generic [ref=e82]:
+            - link "EyeMed" [ref=e84] [cursor=pointer]:
+              - /url: https://www.eyemed.com/en-us
+              - img "EyeMed" [ref=e85]
+            - link "EyeMed International" [ref=e87] [cursor=pointer]:
+              - /url: https://www.eyemedinternational.com/
+              - img "EyeMed International" [ref=e88]
+            - link "Eye Care" [ref=e90] [cursor=pointer]:
+              - /url: https://www.essilorluxotticaeyecare.com/
+              - img "Eye Care" [ref=e91]
+            - link "One Sight" [ref=e93] [cursor=pointer]:
+              - /url: https://onesight.essilorluxottica.com/
+              - img "One Sight" [ref=e94]
+        - generic [ref=e95]:
+          - generic [ref=e96]:
+            - heading "Vue JS" [level=3] [ref=e97]
+            - generic [ref=e98]:
+              - paragraph [ref=e99]: These projects are B2B, customer transactions, rewarding points, refunds and more, are covered by these projects
+              - text: "Stack used are: Vue JS, Drupal, & Java."
+          - generic [ref=e100]:
+            - link "EssilorPro EssilorPro" [ref=e102] [cursor=pointer]:
+              - /url: https://www.essilorpro.io/my/auth/login-new
+              - img "EssilorPro" [ref=e103]
+              - paragraph [ref=e104]: EssilorPro
+            - link "OptiPro OptiPro" [ref=e106] [cursor=pointer]:
+              - /url: https://www.optipro.io/sg/auth/login
+              - img "OptiPro" [ref=e107]
+              - paragraph [ref=e108]: OptiPro
+            - link "Nikon - Professionals Hub Nikon - Professionals Hub" [ref=e110] [cursor=pointer]:
+              - /url: https://professionals.nikonlenswear.com/ca
+              - img "Nikon - Professionals Hub" [ref=e111]
+              - paragraph [ref=e112]: Nikon - Professionals Hub

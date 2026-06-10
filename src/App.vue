@@ -6,19 +6,18 @@
     />
 
     <main>
-      <Header
-        class="grid justify-self-center w-full max-w-full h-[30rem] mb-1"
-      />
-      <Me class="grid justify-self-center w-full max-w-full lg:max-w-[55rem]" />
-      <Experience class="grid justify-self-center w-full bg-slate-100" />
-      <Projects
-        class="grid justify-self-center w-full max-w-full lg:max-w-[55rem]"
-      />
+      <Header class="grid justify-self-center w-full max-w-full" />
+      <Me class="grid justify-self-center w-full max-w-full" />
+      <Experience class="grid justify-self-center w-full max-w-full" />
+      <Timeline class="grid justify-self-center w-full max-w-full" />
+      <Projects class="grid justify-self-center w-full max-w-full" />
+      <Contact class="grid justify-self-center w-full max-w-full" />
     </main>
+
     <button
       v-if="displayButton"
       @click="onScrollToTop()"
-      class="fixed bottom-2 right-2 cursor-pointer p-3 rounded-full bg-black"
+      class="fixed bottom-4 right-4 cursor-pointer p-3 rounded-full bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--accent)] transition-colors z-50"
     >
       <img src="/chevron-up.svg" alt="chevron-up" class="h-[15px] w-auto" />
     </button>
@@ -44,7 +43,6 @@ async function handleScroll() {
   const scrollY = window?.scrollY || document?.documentElement?.scrollTop;
   const height = window?.innerHeight - 30;
   scrolledPast100vh.value = scrollY > height;
-
   displayButton.value = scrollY > window?.innerHeight / 2;
 }
 
