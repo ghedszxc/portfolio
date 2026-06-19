@@ -17,9 +17,9 @@
     <button
       v-if="displayButton"
       @click="onScrollToTop()"
-      class="fixed bottom-4 right-4 cursor-pointer p-3 rounded-full bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--accent)] transition-colors z-50"
+      class="fixed bottom-4 right-4 cursor-pointer p-3.5 rounded-full bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--accent)] transition-colors z-50"
     >
-      <img src="/chevron-up.svg" alt="chevron-up" class="h-[15px] w-auto" />
+      <img src="/chevron-up.svg" alt="chevron-up" class="h-[18px] w-auto" />
     </button>
   </div>
 </template>

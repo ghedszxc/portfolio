@@ -1,6 +1,7 @@
 <template>
   <nav
     :class="`${props?.scrolledPast100vh ? 'bg-[#0d0d0d] border-b border-[#262626]' : 'bg-transparent'} grid content-center h-[8vh] w-full fixed top-0 left-0 z-50 transition-colors duration-300`"
+    style="transform: translateZ(0); -webkit-transform: translateZ(0);"
   >
     <div class="mx-auto w-full px-4 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
